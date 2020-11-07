@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<script type="text/javascript">
+window.onload = function () {
+	var chart = new CanvasJS.Chart("chartContainer",
+	{
+		title:{
+			text: "Product Profile of Millets"
+		},
+		legend: {
+			maxWidth: 350,
+			itemWidth: 120,
+		},
+		data: [
+		{
+			type: "pie",
+			showInLegend: true,
+			legendText: "{indexLabel}",
+			dataPoints: [
+		    	{ y: 17, indexLabel: "Chattisgarh(17%)" },
+				{ y: 6, indexLabel: "Gujarat(6%)" },
+		    	 { y: 33, indexLabel: "Madhya Pradesh(33%)" },
+		      	{ y: 8, indexLabel: "Maharashtra(8%)" },
+			    { y: 3, indexLabel: "Odisa(3%)" },
+                { y: 2, indexLabel: "Rajasthan(2%)"},
+				{ y: 5, indexLabel: "Tamil Nadu(5%)"},
+				{ y: 9, indexLabel: "Uttarakhand(9%)"},
+				{ y: 4, indexLabel: "Andhra Pradesh(4%)" },
+			]
+		}
+		]
+	});
+	chart.render();
+}
+</script>
+<script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+</head>
+<body>
+<div id="chartContainer" style="height: 300px; width: 20%;"></div>
+</body>
+</html>
